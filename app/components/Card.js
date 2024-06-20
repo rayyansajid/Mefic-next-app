@@ -8,9 +8,11 @@ const Card = (props) => {
     if(props.imgSrc !== undefined){
         return (
             <>
-            <div className='p-4 m-4 bg-white'>
+            {/* Implement the hover color transformation */}
+            {/* <div className={props.hover ? 'p-4 m-4 bg-white hover:bg-' : 'p-4 m-4 bg-white'}> */}
+            <div className='p-4 m-4 bg-white border-2 border-r-4 border-b-4 border-slate-100'>
             <div className='flex flex-col w-fit gap-4 bg-white'>
-                <div>
+                <div className={`${props.imgClass ? 'flex justify-center' : null}`}>
                     <Image
                         src={props.imgSrc}
                         alt={props.imgAlt}
@@ -20,10 +22,10 @@ const Card = (props) => {
                 </div>
                 <div>
                     <p className='text-xl self-center' style={{color:"#001B2E"}}>
-                        <b>{boldText}</b><br />{text}
+                        {typeof(boldText) === typeof("") ? (<><b>{boldText}</b><br />{text}</>) : (<>{text}</>)}
                     </p>
                 </div>
-                <div className='text-sm w-3/4'>
+                <div className='text-sm' style={{width:props.paraWidth || "75%"}}>
                     <p style={{color:"#3D3D3D"}}>{para}</p>
                 </div>
                 <div>

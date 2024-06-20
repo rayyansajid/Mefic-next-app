@@ -22,7 +22,7 @@ const Section4 = () => {
         </div>
     </div> */}
     
-    <div className='flex flex-col gap-7'>
+    <div className='flex flex-col gap-7 py-5'>
         <div className='flex gap-3 h-fit' style={{display:"flex", }}>
             {/* <div className='flex items-center justify-center w-full'> */}
             <div className='flex flex-col gap-4 m-7 h-fit'>
@@ -73,6 +73,7 @@ const Section4 = () => {
                 imgWidth = '70'
             />
         </div>
+        {/* Create Animations Here */}
     </div>
     </>
   )
