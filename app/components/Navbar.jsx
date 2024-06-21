@@ -32,7 +32,7 @@ const Navbar = () => {
                     }}>
                         <div>
                             <Image
-                            src="/Vector.png"
+                            src="/phone.png"
                             alt='phone'
                             width={15}
                             height={15}

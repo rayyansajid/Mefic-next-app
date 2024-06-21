@@ -45,7 +45,7 @@ const Table = () => {
             hover="false"
         />
     </div> */}
-    <div className='grid grid-cols-4 grid-rows-6 bg-slate-50 p-2 w-full h-full rounded-lg'>
+    <div className='grid grid-cols-4 grid-rows-6 shadow-lg border-t p-2 w-full h-full rounded-lg'>
         <TableRow
             c1="MEFIC Funds"
             c2="Unit Price"

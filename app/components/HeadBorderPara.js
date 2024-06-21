@@ -10,7 +10,7 @@ const HeadBorderPara = (props) => {
 
   return (
     <>
-    <div className='justify-items-center ' style={{width: props.headingWidth || "30%"}}>
+    <div className='flex justify-center' style={{width: props.headingWidth || "30%"}}>
         <p className="text-3xl" style={{color:`${textColor}`}}>
           {beforeBold} {/*<br/>*/} <b>{boldText}</b> {afterBold} {/*<br/>*/} 
           <span className="font-weight-extrabold" style={{color:'#E95A0C'}}>
