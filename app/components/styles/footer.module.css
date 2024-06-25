@@ -21,7 +21,6 @@
     grid-column-end: 4; */
     grid-row-start: 1;
     grid-row-end: 4;
-
     /* display: flex; */
     gap: 10px;
 }
