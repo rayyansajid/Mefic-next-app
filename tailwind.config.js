@@ -11,7 +11,9 @@ module.exports = {
     animation:{
       'slideInFromLeft': 'slideInFromLeft 5s ease-in-out 0s infinite',
       'slideInFromRight': 'slideInFromRight 5s ease-in-out 0s infinite',
-      'slidetoRop': 'slidetoRop 5s ease-in-out 0s infinite',
+      'slidetoTop': 'slidetoTop 5s ease-in-out 0s infinite',
+      'footerSlideToTop':'footerSlideTotop 5s ease-in-out 0s infinite',
+
     },
     keyframes:{
       slideInFromLeft:{
@@ -35,13 +37,26 @@ module.exports = {
       //   '50%': {transform:'translateY(6%)'},
       //   'to':{transform:'translateY(0)'}
       // }
+      // slidetoTop:{
+      //   'from':{height:'100%'},
+      //   // '25%':{transform:'translateX(-3%)'},
+      //   // '50%':{transform:'translateX(-6%)'},
+      //   '50%': {height:"80%"},
+      //   'to':{height:'100%'}
+      // }
       slidetoTop:{
-        'from':{top:'0'},
+        'from':{transform:'translateY(0)'},
         // '25%':{transform:'translateX(-3%)'},
         // '50%':{transform:'translateX(-6%)'},
-        '50%': {top:"5px"},
-        'to':{top:'0'}
-      }
+        '50%': {transform:"translateY(6%)"},
+        'to':{transform:"translateY(0)"},
+      },
+
+      footerSlideToTop:{
+        'from':{transform:'translateY(0)'},
+        '50%':{transform:'translateY(20%)'},
+        'to':{transform:'translateY(0)'}
+      },
 
 
     },

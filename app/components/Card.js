@@ -7,10 +7,10 @@ const Card = (props) => {
     const para = props.para;
     if(props.imgSrc !== undefined){
         return (
-            <>
-            {/* Implement the hover color transformation */}
-            {/* <div className={props.hover ? 'p-4 m-4 bg-white hover:bg-' : 'p-4 m-4 bg-white'}> */}
-            <div className='p-4 m-4 bg-white shadow-lg'>
+        <>
+        {/* Implement the hover color transformation */}
+        {/* <div className={props.hover ? 'p-4 m-4 bg-white hover:bg-' : 'p-4 m-4 bg-white'}> */}
+        <div className='p-4 m-4 bg-white shadow-lg'>
             <div className='flex flex-col w-fit gap-4 bg-white h-full justify-center'>
                 <div className={`${props.imgClass ? 'flex justify-center items-center' : null}`}>
                     <Image
@@ -38,8 +38,8 @@ const Card = (props) => {
                 </>
                 )}
             </div>
-            </div>
-            </>
+        </div>
+        </>
         )
     }else{
         const title = props.title;

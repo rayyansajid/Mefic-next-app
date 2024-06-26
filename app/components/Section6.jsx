@@ -15,7 +15,7 @@ const Section6 = () => {
                 headingWidth="40%"
                 paraWidth = "60%"
                 borderWidth="20%"/>
-            <div className='flex justify-between w-1/4 pt-2 text-sm'>
+            <div className='flex justify-between w-1/4 lg:w-1/4 pt-2 text-sm gap-7 md:gap-0 lg:gap-0'>
                 <div className='hover:text-[#E95A0C] hover:border-b-2 hover:border-[#E95A0C] mb-2'>
                     <button>All</button>
                 </div>
@@ -26,7 +26,7 @@ const Section6 = () => {
                     <button>Equity Funds</button>
                 </div>
             </div>
-            <div className='cards flex gap-2 justify-evenly w-full'>
+            <div className='cards flex gap-2 justify-evenly w-full flex-wrap md:flex-nowrap lg:flex-nowrap'>
                 <Card
                     imgSrc = '/meras.png'
                     imgAlt = 'meras'

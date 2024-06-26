@@ -5,9 +5,9 @@ import styles from "./styles/sec1.module.css"
 
 const Section1 = () => {
   return (
-    <div className='w-full relative overflow-hidden' style={{height:'32rem'}}>
-      <div className={`${styles.Main} flex flex-col w-fit ml-8 gap-3`} style={{height:'25rem', justifyContent:'center'}}>
-        <div>
+    <div className='w-full relative overflow-hidden h-fit md:h-[32rem] lg:h-[32rem]' style={{}}>
+      <div className={`${styles.Main} flex flex-col w-fit ml-8 pb-7 gap-3 h-fit md:h-[25rem] lg:h-[25rem]`} style={{ justifyContent:'center'}}>
+        <div className=''>
           <button className='text-white hover:bg-white hover:text-black rounded-lg' style={{background: '#2D3C65'}}>
             <p className='p-2'>Book a Consultant</p>
           </button>

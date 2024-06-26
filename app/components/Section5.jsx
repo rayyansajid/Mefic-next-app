@@ -6,11 +6,11 @@ const Section5 = () => {
   return (
     <>
     <div className='bg-white p-10'>
-        <div className='flex justify-around gap-4 pb-4'>
-            <div className='w-3/6'>
+        <div className='flex justify-around gap-4 pb-4 flex-wrap md:flex-nowrap'>
+            <div className='w-full md:w-3/6'>
                 <Table />
             </div>
-            <div className='flex flex-col gap-4 w-1/3'>
+            <div className='flex flex-col gap-4 w-full md:w-1/3'>
                 <div className='w-fit'>
                     <button className='text-sm text-[#001B2E] bg-[#E7E7E7] hover:bg-white hover:text-black rounded-lg'>
                         <p className='p-2'>MEFIC FUNDS</p>
@@ -34,7 +34,7 @@ const Section5 = () => {
                 </div>
             </div>
         </div>
-        <div className='py-12 w-3/4 flex flex-col gap-5'>
+        <div className='py-12 w-full md:w-3/4 lg:w-3/4 flex flex-col gap-5'>
             <HeadBorderPara
                 beforeBold= "The"
                 boldText= "latest news"
@@ -46,7 +46,7 @@ const Section5 = () => {
                 paraWidth = "60%"
                 borderWidth="20%"/>
         </div>
-        <div className='flex gap-2'>
+        <div className='flex gap-2 flex-wrap md:flex-nowrap lg:flex-nowrap'>
             <Card
                 text = 'MEFIC Saudi Riyal Murabaha Fund for the period ending on 2023-12-31'
                 para ='Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower growth.'

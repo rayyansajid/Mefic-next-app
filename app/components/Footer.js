@@ -123,9 +123,9 @@ const Footer = () => {
     // </div>
     <>
         <div className='Footer flex flex-col justify-center items-center gap-4 p-8 pb-4'>
-            <div className='flex justify-between gap-4 w-full h-80'>
-                <div className='flex gap-6 flex-col pt-10 w-full bg-[#181E2D]'>
-                    <div className='pl-3'>
+            <div className='flex justify-between gap-4 w-full h-80 flex-wrap md:flex-nowrap lg:flex-nowrap'>
+                <div className='flex gap-6 flex-col w-full relative z-0 bg-[#181E2D]'>
+                    <div className='pl-6 pt-20 z-20'>
                         <Image
                             src="/mefic.png"
                             alt="mefic-logo"
@@ -133,7 +133,7 @@ const Footer = () => {
                             width={140}
                         />
                     </div>
-                    <div className='flex gap-7 w-full text-sm px-3'>
+                    <div className='flex gap-7 w-full z-20 text-sm px-6'>
                         <div className='flex gap-2'>
                             <div className='pt-0.5'>
                             <Image
@@ -163,6 +163,57 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='absolute w-full h-full z-10'>
+                        <div className='w-full h-[70%] grid'
+                        style={{display:"grid",
+                            gridTemplateColumns:"1fr 3fr 3fr 5fr",
+                            gridTemplateRows:"1fr 1.5fr 1fr 1.5fr"
+                        }}>
+                            <div className='bg-slate-500 animate-slideInFromRight animate-slidetoTop' style={{
+                                gridColumnStart:"1",
+                                gridColumnEnd:"2",
+                                gridRowStart:"2",
+                                gridRowEnd:"4"
+                            }}>
+
+                            </div>
+                            <div className='bg-slate-500 animate-slideInFromRight animate-slidetoTop' style={{
+                                gridColumnStart:"1",
+                                gridColumnEnd:"3",
+                                gridRowStart:"2",
+                                gridRowEnd:"3"
+                            }}>
+
+                            </div>
+                            <div className='bg-slate-500 animate-slideInFromRight animate-slidetoTop' style={{
+                                gridColumnStart:"3",
+                                gridColumnEnd:"4",
+                                gridRowStart:"1",
+                                gridRowEnd:"3"
+                            }}>
+
+                            </div>
+                            <div className='bg-slate-500 animate-slideInFromLeft animate-slidetoTop' style={{
+                                gridColumnStart:"4",
+                                gridColumnEnd:"5",
+                                gridRowStart:"1",
+                                gridRowEnd:"2"
+                            }}>
+                                
+                            </div>
+                            <div className='bg-slate-800 animate-slideInFromLeft' style={{
+                                gridColumnStart:"4",
+                                gridColumnEnd:"5",
+                                gridRowStart:"2",
+                                gridRowEnd:"3"
+                            }}>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
                 {/* <div className='w-full flex justify-end items-center'> */}
                 <div className='w-full h-[80%] grid grid-cols-3 gap-1 self-end'>
@@ -210,7 +261,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='border-2 border-[#2D3C65] w-11/12 rounded-lg'>{/*Line */}</div>
-            <div className='flex justify-center w-full text-white text-sm'>
+            <div className='justify-center w-full text-white text-sm hidden md:flex lg:flex'>
                 <div>
                     © 2024 MEFIC Capital. All rights reserved.
                 </div>

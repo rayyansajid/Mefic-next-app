@@ -26,7 +26,7 @@ const Navbar = () => {
                         </a>
                     </div>
                 </div>
-                <div className='flex' style={{flexDirection:"column", gap:"0.5em", paddingTop:"7px"}}>
+                <div className='flex flex-wrap md:flex-nowrap lg:flex-nowrap' style={{flexDirection:"column", gap:"0.5em", paddingTop:"7px"}}>
                     <div className='py-1 text-white text-xs flex justify-between' style={{height:"2em", width:"35em", zIndex:2,
                         alignSelf:"flex-end"
                     }}>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 </div>
                 <div className='md:hidden flex items-center'>
                     <button
-                    className='inline-flex items-center justify-senter p-2 rounded-md
+                    className='inline-flex items-center justify-center p-2 rounded-md
                     hover: text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
                     onClick={toggleNavBar}>
                         {isClick?(
@@ -148,7 +148,7 @@ const Navbar = () => {
         </div>
         {isClick && (
             <div className='md:hidden'>
-                <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+                <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 flex'>
                 <a 
                 href="/"
                 className='text-white hover:bg-white hover:text-black rounded-lg p-2'>

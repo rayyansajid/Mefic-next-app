@@ -22,7 +22,7 @@ const Section4 = () => {
                 </p>
             </div>
         </div>
-        <div className='flex gap-2 justify-around mx-7'>
+        <div className='flex gap-2 justify-around mx-7 lg:flex-nowrap flex-wrap '>
             <div className='flex flex-col justify-center'>
                 <p className="text-3xl" style={{color:`#FFFFFF`}}>
                     What <b>Problems</b> can we <span className="font-weight-extrabold" style={{color:'#E95A0C'}}><b>solve together</b></span>?
@@ -35,8 +35,7 @@ const Section4 = () => {
                 imgSrc = '/dollar.png'
                 imgAlt = 'dollar'
                 imgHeight = '70'
-                imgWidth = '70'
-            />
+                imgWidth = '70'/>
             <Card
                 boldtext = 'Private'
                 text = 'Equity & IB'
@@ -44,8 +43,7 @@ const Section4 = () => {
                 imgSrc = '/stock.png'
                 imgAlt = 'stock'
                 imgHeight = '70'
-                imgWidth = '70'
-            />
+                imgWidth = '70'/>
             <Card
                 boldtext = 'Real Estate '
                 text = 'Investments'
@@ -53,12 +51,11 @@ const Section4 = () => {
                 imgSrc = '/estate.png'
                 imgAlt = 'estate'
                 imgHeight = '70'
-                imgWidth = '70'
-            />
+                imgWidth = '70'/>
         </div>
         {/* Create Animations Here */}
-        <div className='relative h-[10em]'>
-            <div className='absolute w-full h-full z-0 animate-slideInFromRight'
+        <div className='relative h-[10em] overflow-hidden'>
+            <div className='absolute w-full h-full z-0 animate-slideInFromRight overflow-hidden'
             style={{display:"grid",
                 gridTemplateColumns:"7fr 4fr 4fr 1fr",
                 gridTemplateRows:"1.5fr 0.5fr 3fr",
@@ -92,7 +89,7 @@ const Section4 = () => {
                 </div>
 
             </div>
-            <div className='absolute w-[80%] h-full z-10 animate-slideInFromLeft' 
+            <div className='absolute w-[80%] h-full z-10 animate-slideInFromLeft overflow-hidden' 
                 style={{display:'grid',
                     gridTemplateColumns: '0.5fr 4fr 3fr 3fr',
                     gridTemplateRows: '1fr 1fr 2fr 1fr'}}>
@@ -125,12 +122,12 @@ const Section4 = () => {
 
                 </div>
             </div>
-            <div className='absolute w-full h-full z-20 animate-slidetoRop'
+            <div className='absolute w-full h-full z-20 overflow-hidden animate-slidetoTop'
             style={{display:"grid",
                 gridTemplateColumns:"2fr 3fr 2fr 2fr 2fr",
                 gridTemplateRows:"2fr 0.5fr 2fr 1.5fr"
             }}>
-                <div className='bg-[#2D3C65] animate-slideInFromRight' style={{
+                <div className='bg-[#2D3C65] animate-slidetoTop overflow-hidden' style={{
                     gridColumnStart:"1",
                     gridColumnEnd:"2",
                     gridRowStart:"2",
@@ -138,7 +135,7 @@ const Section4 = () => {
                 }}>
 
                 </div>
-                <div className='bg-[#2D3C65] animate-slideInFromLeft' style={{
+                <div className='bg-[#2D3C65] animate-slideInFromLeft overflow-hidden' style={{
                     gridColumnStart:"2",
                     gridColumnEnd:"3",
                     gridRowStart:"4",
@@ -146,7 +143,7 @@ const Section4 = () => {
                 }}>
 
                 </div>
-                <div className='bg-[#2D3C65]' style={{
+                <div className='bg-[#2D3C65] animate-slidetoTop animate-slideInFromLeft' style={{
                     gridColumnStart:"3",
                     gridColumnEnd:"4",
                     gridRowStart:"1",
@@ -154,7 +151,7 @@ const Section4 = () => {
                 }}>
 
                 </div>
-                <div className='bg-[#2D3C65] animate-slideInFromRight' style={{
+                <div className='bg-[#2D3C65] animate-slideInFromRight overflow-hidden' style={{
                     gridColumnStart:"4",
                     gridColumnEnd:"5",
                     gridRowStart:"2",
@@ -162,7 +159,7 @@ const Section4 = () => {
                 }}>
 
                 </div>
-                <div className='bg-[#2D3C65] animate-slideInFromLeft' style={{
+                <div className='bg-[#2D3C65] animate-slideInFromLeft overflow-hidden' style={{
                     gridColumnStart:"5",
                     gridColumnEnd:"6",
                     gridRowStart:"3",
